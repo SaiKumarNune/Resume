@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Kumar Nune - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.75in;
+            font-size: 11pt;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #2c3e50;
+        }
+        
+        .name {
+            font-size: 28px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+        
+        .contact-info {
+            font-size: 10pt;
+            color: #555;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            font-size: 14pt;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 12px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #bdc3c7;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .summary {
+            text-align: justify;
+            font-size: 10.5pt;
+            line-height: 1.7;
+            color: #444;
+        }
+        
+        .highlight {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .job {
+            margin-bottom: 20px;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+        }
+        
+        .job-title {
+            font-weight: 700;
+            font-size: 12pt;
+            color: #2c3e50;
+        }
+        
+        .company {
+            font-weight: 600;
+            color: #34495e;
+            margin-top: 2px;
+        }
+        
+        .date-location {
+            font-size: 10pt;
+            color: #7f8c8d;
+            text-align: right;
+            white-space: nowrap;
+        }
+        
+        .achievements {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .achievements li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        
+        .achievements li::before {
+            content: "▪";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+            font-weight: bold;
+        }
+        
+        .metric {
+            font-weight: 600;
+            color: #e74c3c;
+        }
+        
+        .tech {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            font-size: 10pt;
+        }
+        
+        .skill-category {
+            margin-bottom: 10px;
+        }
+        
+        .skill-category-title {
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .skill-items {
+            color: #555;
+            line-height: 1.5;
+        }
+        
+        .education-item {
+            margin-bottom: 15px;
+        }
+        
+        .degree {
+            font-weight: 700;
+            color: #2c3e50;
+        }
+        
+        .institution {
+            font-weight: 600;
+            color: #34495e;
+            margin-top: 2px;
+        }
+        
+        .education-details {
+            font-size: 10pt;
+            color: #7f8c8d;
+            margin-top: 3px;
+        }
+        
+        .certifications {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 8px;
+            font-size: 10pt;
+        }
+        
+        .cert-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+        }
+        
+        .cert-name {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .cert-org {
+            color: #7f8c8d;
+            font-size: 9pt;
+        }
+        
+        @media print {
+            body {
+                padding: 0.5in;
+                font-size: 10pt;
+            }
+            
+            .section {
+                margin-bottom: 20px;
+            }
+            
+            .job {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="name">SAI KUMAR NUNE</h1>
+        <div class="contact-info">
+            <div class="contact-item">📍 New Haven, CT 06511</div>
+            <div class="contact-item">📧 nunesaikumarnsk@gmail.com</div>
+            <div class="contact-item">📱 +1 (636) 891-2315</div>
+            <div class="contact-item">💼 LinkedIn Profile</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Professional Summary</h2>
+        <p class="summary">
+            <span class="highlight">AI/ML Engineer</span> with <span class="highlight">4.5+ years</span> of experience architecting full-stack machine learning and Generative AI systems. Specialized in <span class="highlight">LLM fine-tuning</span> (GPT-4, LLaMA2, T5), <span class="highlight">RAG pipelines</span>, and <span class="highlight">LangChain/LangGraph-powered agents</span>. Proven track record delivering solutions that improved business KPIs by up to <span class="highlight">40%</span>. Expert in cloud-native <span class="highlight">MLOps</span> (SageMaker, Docker, Kubernetes) and multi-agent orchestration for scalable, production-ready applications.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Professional Experience</h2>
+        
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">AI Engineer</div>
+                    <div class="company">Responsive (Remote)</div>
+                </div>
+                <div class="date-location">July 2024 – Present</div>
+            </div>
+            <ul class="achievements">
+                <li>Engineered <span class="tech">LangGraph-powered GPT chatbots</span> for internal automation, improving service response time by <span class="metric">35%</span> and streamlining support workflows</li>
+                <li>Built robust <span class="tech">RAG systems</span> with <span class="tech">LangChain, FAISS, ChromaDB,</span> and <span class="tech">SQL</span> to enhance enterprise knowledge access</li>
+                <li>Increased document ingestion throughput by <span class="metric">40%</span> through token-optimized chunking pipelines for large-scale processing</li>
+                <li>Collaborated with cross-functional teams to translate business requirements into technical AI solutions</li>
+                <li>Managed deployments with <span class="tech">Docker, Kubernetes, OpenShift,</span> leveraging <span class="tech">GitHub Actions</span> for CI/CD</li>
+            </ul> <li>Increased document ingestion throughput by <span class="metric">40%</span> through token-optimized chunking pipelines for large-scale processing</li>
+                <li>Collaborated with cross-functional teams to translate business requirements into technical AI solutions</li>
+                <li>Managed deployments with <span class="tech">Docker, Kubernetes, OpenShift,</span> leveraging <span class="tech">GitHub Actions</span> for CI/CD</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">GenAI / ML Engineer</div>
+                    <div class="company">Wipro, Hyderabad, India</div>
+                </div>
+                <div class="date-location">Dec 2021 – Mar 2024</div>
+            </div>
+            <ul class="achievements">
+                <li>Designed <span class="tech">retrieval-augmented generation (RAG) workflows</span> for healthcare claims automation, reducing manual triage by <span class="metric">35%</span> and accelerating claims processing</li>
+                <li>Fine-tuned <span class="tech">LLMs (GPT-4, LLaMA2, T5)</span> for summarization and document-intelligence use cases within production pipelines</li>
+                <li>Built NLP pipelines on <span class="tech">Amazon SageMaker</span>, applying prompt engineering and few-shot learning to optimize model performance</li>
+                <li>Trained document-centric <span class="tech">computer vision models</span> with <span class="tech">PyTorch</span> and <span class="tech">TensorFlow</span> for visual information extraction from forms and tables</li>
+                <li>Partnered with DevOps teams to optimize deployments, cutting inference latency by <span class="metric">20%</span> through model and infrastructure tuning</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Associate Software Engineer</div>
+                    <div class="company">Zensar Technologies, Hyderabad, India</div>
+                </div>
+                <div class="date-location">Dec 2020 – Nov 2021</div>
+            </div>
+            <ul class="achievements">
+                <li>Created <span class="tech">classification and anomaly detection models</span> with automated retraining workflows using <span class="tech">Apache Spark</span> and <span class="tech">Airflow</span></li>
+                <li>Deployed <span class="tech">transformer-based NER and classification models</span> on <span class="tech">AWS</span> and <span class="tech">Azure</span> for finance and telecom domains</li>
+                <li>Built executive dashboards using <span class="tech">Power BI</span> and <span class="tech">Tableau</span> to visualize model performance and key business metrics</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <div class="skill-category-title">GenAI & LLMs</div>
+                <div class="skill-items">GPT-4, LLaMA2, T5, LangChain, LangGraph, Prompt Engineering, ReAct Agents</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-title">NLP & ML</div>
+                <div class="skill-items">Python, PyTorch, TensorFlow, Scikit-learn, XGBoost, Spark, Airflow</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-title">Data & Storage</div>
+                <div class="skill-items">SQL, NoSQL, FAISS, ChromaDB, Neo4j</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-title">MLOps & DevOps</div>
+                <div class="skill-items">SageMaker, Docker, Kubernetes, Git, GitHub Actions, Harness</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-title">Cloud & Platforms</div>
+                <div class="skill-items">AWS, Azure, OpenShift</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-title">Analytics & Visualization</div>
+                <div class="skill-items">Power BI, Tableau, VS Code</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Education</h2>
+        
+        <div class="education-item">
+            <div class="job-header">
+                <div>
+                    <div class="degree">Master of Science in Computer Science</div>
+                    <div class="institution">Sacred Heart University, Fairfield, CT</div>
+                </div>
+                <div class="date-location">Jan 2024 – Mar 2025</div>
+            </div>
+            <div class="education-details">CGPA: 3.76/4.0</div>
+        </div>
+
+        <div class="education-item">
+            <div class="job-header">
+                <div>
+                    <div class="degree">Bachelor of Technology in Electronics and Communication Engineering</div>
+                    <div class="institution">Lakireddy Bali Reddy College of Engineering, India</div>
+                </div>
+                <div class="date-location">Graduated Dec 2021</div>
+            </div>
+            <div class="education-details">CGPA: 7.59/10.0</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Certifications</h2>
+        <div class="certifications">
+            <div class="cert-item">
+                <div>
+                    <div class="cert-name">NVIDIA-Certified Associate: Generative AI LLMs</div>
+                    <div class="cert-org">NVIDIA • 2024</div>
+                </div>
+            </div>
+            <div class="cert-item">
+                <div>
+                    <div class="cert-name">Generative AI with LLMs</div>
+                    <div class="cert-org">DeepLearning.AI (Coursera) • 2025</div>
+                </div>
+            </div>
+            <div class="cert-item">
+                <div>
+                    <div class="cert-name">Certified Machine Learning Engineer</div>
+                    <div class="cert-org">Udemy • 2024</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
